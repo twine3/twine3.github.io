@@ -3107,6 +3107,54 @@ a.button.createDefault.subtle:hover {
   color: white;
   background: rgba(13, 13, 13, 0.495);
 }
+button.createDuplicate,
+a.button.createDuplicate {
+  color: #4f4040;
+  background: rgba(157, 166, 34, 0.652);
+  -webkit-transition: 0.2s background, 0.2s -webkit-transform;
+  transition: 0.2s background, 0.2s -webkit-transform;
+  transition: 0.2s background, 0.2s transform;
+  transition: 0.2s background, 0.2s transform, 0.2s -webkit-transform;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+          box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+}
+button.createDuplicate:hover,
+a.button.createDuplicate:hover {
+  background: rgba(177, 187, 39, 0.652);
+}
+button.createDuplicate:active,
+a.button.createDuplicate:active,
+button.createDuplicate.active,
+a.button.createDuplicate.active {
+  background: rgba(137, 145, 30, 0.652);
+}
+button.createDuplicate.subtle,
+a.button.createDuplicate.subtle {
+  color: #4d4d4d;
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+}
+button.createDuplicate.subtle:hover,
+a.button.createDuplicate.subtle:hover {
+  color: rgba(137, 145, 30, 0.652);
+}
+.theme-dark button.createDuplicate.subtle,
+.theme-dark a.button.createDuplicate.subtle {
+  color: #999999;
+  background: none;
+}
+.theme-dark button.createDuplicate,
+.theme-dark a.button.createDuplicate {
+  background: rgba(137, 145, 30, 0.652);
+  color: white;
+}
+.theme-dark button.createDuplicate:hover,
+.theme-dark a.button.createDuplicate:hover {
+  color: white;
+  background: rgba(157, 166, 34, 0.652);
+}
 button.createLogic,
 a.button.createLogic {
   color: white;
@@ -3635,6 +3683,9 @@ table.unlined td {
 }
 .tag.purple {
   background: #6c0ac2;
+}
+.tag.gray {
+  background: gray;
 }
 .theme-dark .tag {
   background: #193d66;
@@ -4901,7 +4952,7 @@ body.theme-dark .cm-s-default .CodeMirror-matchingbracket {
   margin-right: 0.5rem;
 }
 .tags .toolbar button.gray {
-  background: #999999;
+  background: gray;
 }
 .tags .toolbar button.red {
   background: #c20a0a;
